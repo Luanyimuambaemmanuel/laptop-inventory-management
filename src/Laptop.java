@@ -1,15 +1,21 @@
 public class Laptop {
     private String brand;
     private String model;
-    private String processor;
-    private int ram;
+    private String serialNumber;
 
-    public Laptop(String brand, String model, String processor, int ram) {
+    public Laptop(String brand, String model, String serialNumber) {
         this.brand = brand;
         this.model = model;
-        this.processor = processor;
-        this.ram = ram;
+        this.serialNumber = serialNumber;
     }
 
-    // Getters, setters, toString() ...
+    public String getBrand() { return brand; }
+    public String getModel() { return model; }
+    public String getSerialNumber() { return serialNumber; }
+
+    @Override
+    public String toString() {
+        return "Brand: " + brand + ", Model: " + model + ", Serial Number: " + serialNumber;
+    }
 }
+
