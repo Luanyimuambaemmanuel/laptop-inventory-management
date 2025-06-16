@@ -9,3 +9,4 @@ This is a basic Java application to manage laptop inventory.
 
 ## Run Instructions
 1. Compile the Java files:
+# laptop-inventory-management
